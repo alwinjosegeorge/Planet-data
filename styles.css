@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    padding: 20px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.source-info {
+    text-align: center;
+    color: #bbbbbb;
+    margin-bottom: 30px;
+}
+
+.source-info a {
+    color: #4db8ff;
+    text-decoration: none;
+}
+
+.source-info a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background-color: #1e1e1e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+thead {
+    background-color: #333;
+    color: #ffcc00;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #252525;
+}
+
+tbody tr:hover {
+    background-color: #333;
+}
+
+/* Planet category styling */
+tbody tr td:first-child {
+    background-color: #4a4a4a;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+tbody tr td:nth-child(2) {
+    background-color: #3a3a3a;
+    color: #ffcc00;
+}
+
+/* Links styling */
+td a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        margin: 0 -20px;
+        border-radius: 0;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Custom colors for specific rows */
+tbody tr:nth-child(1) { background-color: #2a2a2a; } /* Mercury */
+tbody tr:nth-child(2) { background-color: #3a2a1e; } /* Venus */
+tbody tr:nth-child(3) { background-color: #1e2a3a; } /* Earth */
+tbody tr:nth-child(4) { background-color: #3a1e1e; } /* Mars */
+tbody tr:nth-child(5) { background-color: #3a321e; } /* Jupiter */
+tbody tr:nth-child(6) { background-color: #3a2e1e; } /* Saturn */
+tbody tr:nth-child(7) { background-color: #1e3a3a; } /* Uranus */
+tbody tr:nth-child(8) { background-color: #2a1e3a; } /* Neptune */
+tbody tr:nth-child(9) { background-color: #2a2a2a; } /* Pluto */
